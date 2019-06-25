@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Jadhav Dairy Delivery Boy</string>
+    <string name="new_register"><u>New Member? Sign up now.</u></string>
 </resources>
