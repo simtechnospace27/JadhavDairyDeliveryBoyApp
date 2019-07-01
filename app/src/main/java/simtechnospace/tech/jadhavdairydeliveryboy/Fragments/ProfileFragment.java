@@ -9,7 +9,9 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import simtechnospace.tech.jadhavdairydeliveryboy.Adapters.CompleteListAdapter;
@@ -78,6 +80,12 @@ public class ProfileFragment extends Fragment {
 
 
         mPendingListAdapter.notifyDataSetChanged();
+
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        String strDate= formatter.format(date);
+
+        mTextViewDate.setText(strDate);
 
 
         return view;

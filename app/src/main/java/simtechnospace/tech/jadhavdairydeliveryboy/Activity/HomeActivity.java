@@ -165,6 +165,7 @@ public class HomeActivity extends AppCompatActivity {
                 params.put("delivery_date", deliveryDate);
 
 
+                System.out.println(params);
             } catch (JSONException e) {
                 e.printStackTrace();
 

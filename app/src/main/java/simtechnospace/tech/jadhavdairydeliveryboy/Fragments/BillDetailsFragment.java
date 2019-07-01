@@ -97,9 +97,16 @@ public class BillDetailsFragment extends Fragment {
 
         mPendingListAdapter.notifyDataSetChanged();
 
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
+        String strDate= formatter.format(date);
 
-return view;
+        mTextViewDate.setText(strDate);
+
+
+        return view;
     }
+
 
 
 
