@@ -6,6 +6,7 @@
         android:icon="@drawable/notification"
         app:showAsAction="ifRoom"
         android:title="Notification"
+        android:visible="false"
         app:actionLayout="@layout/actionbar_badge_layout">
     </item>
     <item

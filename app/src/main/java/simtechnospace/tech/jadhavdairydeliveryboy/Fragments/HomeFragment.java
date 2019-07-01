@@ -195,7 +195,16 @@ public class HomeFragment extends Fragment {
 
                     }
                     else{
-                        Toast.makeText(getActivity(), response.getString("msg"), Toast.LENGTH_SHORT).show();
+                   //     Toast.makeText(getActivity(), response.getString("msg"), Toast.LENGTH_SHORT).show();
+
+
+                        mCustomerDetailsArrayList = mDBHelper.getPendingUserList();
+
+
+                        mPendingListAdapter = new PendingListAdapter(mCustomerDetailsArrayList);
+                        mRecyclerViewUserList.setAdapter( mPendingListAdapter );
+                        mPendingListAdapter.notifyDataSetChanged();
+
                     }
                 } catch (JSONException e) {
                     e.printStackTrace();
@@ -206,6 +215,12 @@ public class HomeFragment extends Fragment {
         }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError error) {
+
+                mCustomerDetailsArrayList = mDBHelper.getPendingUserList();
+
+                mPendingListAdapter = new PendingListAdapter(mCustomerDetailsArrayList);
+                mRecyclerViewUserList.setAdapter( mPendingListAdapter );
+                mPendingListAdapter.notifyDataSetChanged();
 
 
             }
