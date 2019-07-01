@@ -6,5 +6,6 @@ public class URL {
 
     public static String mGetUserListFromServerUrl = "http://thegoviddo.tech/admin/fetch_user_details.php";
 
+    public static String mDeliverySaveList = "http://thegoviddo.tech/admin/savedelivery.php";
 
 }

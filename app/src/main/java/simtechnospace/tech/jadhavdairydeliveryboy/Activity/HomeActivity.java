@@ -146,13 +146,52 @@ public class HomeActivity extends AppCompatActivity {
 
             Cart cart = mCompleteDetailSaveToServerList.get(i);
 
-            String customerId = cart.getCustomerId();
-            String empEmail = userCredentialsAfterLogin.getEmail();
+            final String customerId = cart.getCustomerId();
+            final String empEmail = userCredentialsAfterLogin.getEmail();
             String deliveryDate = cart.getTimeStamp();
             int delivery_status = cart.getDeliveryStatus();
             String requi = cart.getRequirements();
 
-            
+            String mSaveDelivery = URL.mDeliverySaveList;
+            final RequestQueue requestQueue = Volley.newRequestQueue(this);
+
+            JSONObject params = new JSONObject();
+            try {
+
+                params.put("emp_email", empEmail);
+                params.put("userid", customerId);
+                params.put("delivery_status", delivery_status);
+                params.put("quantity", requi);
+                params.put("delivery_date", deliveryDate);
+
+
+            } catch (JSONException e) {
+                e.printStackTrace();
+
+            }
+
+            final JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, mSaveDelivery, params, new Response.Listener<JSONObject>() {
+                @Override
+                public void onResponse(JSONObject response) {
+                    
+                }
+            }, new Response.ErrorListener() {
+                @Override
+                public void onErrorResponse(VolleyError error) {
+
+
+                }
+            })
+            {
+                @Override
+                public Map<String, String> getHeaders() throws AuthFailureError {
+                    HashMap<String, String> headers = new HashMap<String, String>();
+                    headers.put("Content-Type", "application/json");
+                    return headers;
+                }
+            };
+
+            requestQueue.add(jsonObjectRequest);
 
 
         }
