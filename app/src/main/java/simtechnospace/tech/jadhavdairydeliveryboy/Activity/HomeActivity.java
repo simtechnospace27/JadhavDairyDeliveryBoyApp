@@ -173,7 +173,7 @@ public class HomeActivity extends AppCompatActivity {
             final JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, mSaveDelivery, params, new Response.Listener<JSONObject>() {
                 @Override
                 public void onResponse(JSONObject response) {
-                    
+
                 }
             }, new Response.ErrorListener() {
                 @Override
