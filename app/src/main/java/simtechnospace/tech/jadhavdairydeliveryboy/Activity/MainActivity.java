@@ -27,6 +27,7 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Map;
 
+import simtechnospace.tech.jadhavdairydeliveryboy.PojoClass.Cart;
 import simtechnospace.tech.jadhavdairydeliveryboy.PojoClass.URL;
 import simtechnospace.tech.jadhavdairydeliveryboy.PojoClass.UserCredentialsAfterLogin;
 import simtechnospace.tech.jadhavdairydeliveryboy.R;
@@ -41,6 +42,7 @@ public class MainActivity extends AppCompatActivity {
     Vibrator mVibrator;
     UserCredentialsAfterLogin userCredentialsAfterLogin;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,6 +50,8 @@ public class MainActivity extends AppCompatActivity {
 
 
         userCredentialsAfterLogin = new UserCredentialsAfterLogin(MainActivity.this);
+
+
 
 
         if (userCredentialsAfterLogin.getEmail() != "")
@@ -74,6 +78,7 @@ public class MainActivity extends AppCompatActivity {
         mVibrator = (Vibrator) getSystemService(Context.VIBRATOR_SERVICE);
 
         mTextViewNewUserRegistration = findViewById(R.id.textRegisterNewUser);
+        mTextViewNewUserRegistration.setVisibility(View.GONE);
 
 
         mBtnLogin.setOnClickListener(new View.OnClickListener() {
@@ -153,9 +158,6 @@ public class MainActivity extends AppCompatActivity {
                 e.printStackTrace();
 
             }
-
-            System.out.println(params.toString());
-
 
 
             String registrationUrl = URL.mLoginUrl;

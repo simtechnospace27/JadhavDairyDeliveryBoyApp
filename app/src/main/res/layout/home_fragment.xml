@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <android.support.v4.widget.NestedScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:scrollbars="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/othersCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:elevation="12dp"
+                android:thicknessRatio="1"
+                app:cardPreventCornerOverlap="false">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="3dp">
+
+
+
+                        <TextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="User List For Date : "
+                            android:layout_weight="1"
+                            android:textColor="@color/changeTextColor"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="bold" />
+
+
+                        <TextView xmlns:app="http://schemas.android.com/apk/res-auto"
+                            android:id="@+id/txtUserRequirements"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/fab_margin"
+                            android:paddingLeft="@dimen/text_margin_left"
+                            android:text="text"
+                            android:layout_weight="1"
+                            android:textColor="@color/changeTextColor"
+                            android:textSize="@dimen/normal_text_size"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/calenderCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="3dp"
+                android:elevation="12dp"
+                android:thicknessRatio="1"
+                app:cardPreventCornerOverlap="false">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="12dp"
+                        android:text="Sr. No"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:textColor="@color/changeTextColor" />
+
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="2dp"
+                        android:background="#c0c0c0"/>
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:textSize="12dp"
+                        android:textStyle="bold"
+                        android:gravity="center"
+                        android:text="Name"
+                        android:textColor="@color/changeTextColor" />
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="2dp"
+                        android:background="#c0c0c0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:text="Address"
+                        android:textStyle="bold"
+                        android:textColor="@color/changeTextColor" />
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="2dp"
+                        android:background="#c0c0c0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:textSize="12dp"
+                        android:gravity="center"
+                        android:text="Requirement"
+                        android:textStyle="bold"
+                        android:textColor="@color/changeTextColor" />
+
+
+                    <View
+                        android:layout_height="match_parent"
+                        android:layout_width="2dp"
+                        android:background="#c0c0c0"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="10dp"
+                        android:textSize="12dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textStyle="bold"
+                        android:text="Action"
+                        android:textColor="@color/changeTextColor" />
+                </LinearLayout>
+
+                <View
+                    android:layout_height="2dp"
+                    android:layout_width="match_parent"
+                    android:background="#c0c0c0"/>
+
+                <android.support.v7.widget.RecyclerView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/userList">
+
+                </android.support.v7.widget.RecyclerView>
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+
+    </android.support.v4.widget.NestedScrollView>
+
+</LinearLayout>

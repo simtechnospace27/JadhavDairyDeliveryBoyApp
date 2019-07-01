@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context="simtechnospace.tech.jadhavdairydeliveryboy.Activity.Activity.SplashScreen">
+    tools:context="simtechnospace.tech.jadhavdairydeliveryboy.Activity.SplashScreen">
 
     <ImageView
         android:id="@+id/splashScreenImage"

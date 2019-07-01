@@ -2,7 +2,9 @@ package simtechnospace.tech.jadhavdairydeliveryboy.PojoClass;
 
 public class URL {
 
-    public static String Url_Registration = "http://thegoviddo.tech/admin/registration.php";
+    public static String mLoginUrl = "http://thegoviddo.tech/admin/employee_login.php";
 
-    public static String mLoginUrl = "http://thegoviddo.tech/admin/login.php";
+    public static String mGetUserListFromServerUrl = "http://thegoviddo.tech/admin/fetch_user_details.php";
+
+
 }
